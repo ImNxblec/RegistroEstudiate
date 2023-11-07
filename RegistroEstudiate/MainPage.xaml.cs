@@ -12,7 +12,7 @@
         }
         private void Confirmar_Clicked(object sender, EventArgs e)
         {
-            DisplayAlert("Registro ", MiEstudiante.Nombre + " Sus datos se ingresaron correctamente", "ok");
+            DisplayAlert("Registro ", $"{MiEstudiante} Sus datos se ingresaron correctamente", "ok");
         }
     }
 }
