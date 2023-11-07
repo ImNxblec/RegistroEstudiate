@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RegistroEstudiate.MainPage">
+
+    <StackLayout>
+        <Label 
+            Text="REGISTRO ESTUDIANTE" 
+            HorizontalOptions="Center" 
+            VerticalOptions="Center" 
+            FontSize="24" />
+        <Label 
+            Text="Nombre" 
+            HorizontalOptions="Start" 
+            VerticalOptions="Start" 
+            FontSize="18"/>
+            
+        <Entry 
+            x:Name="NombreEntry" 
+            Placeholder="Ingresa el nombre del estudiante" 
+            HorizontalOptions="Start" 
+            VerticalOptions="Start" 
+            FontSize="18"
+            WidthRequest="350"
+            Text="{Binding Nombre}"/>
+        <Label 
+            Text="Apellido" 
+            HorizontalOptions="Start" 
+            VerticalOptions="Start" 
+            FontSize="18"
+            WidthRequest="350"/>
+        <Entry 
+            x:Name="ApellidoEntry" 
+            Placeholder="Ingresa el apellido del estudiante" 
+            HorizontalOptions="Start" 
+            VerticalOptions="Start" 
+            FontSize="18"
+            WidthRequest="350"
+            Text="{Binding Apellido}"/>
+        <Label 
+            Text="Materia"
+            HorizontalOptions="Start" 
+            VerticalOptions="Start" 
+            FontSize="18"
+            WidthRequest="350"/>
+        <Entry 
+            x:Name="MateriaEntry" 
+            Placeholder="Ingresa la materia del estudiante" 
+            HorizontalOptions="Start" 
+            VerticalOptions="Start" 
+            FontSize="18"
+            WidthRequest="350"
+            Text="{Binding Materia}"/>
+        <Button 
+            Text="Confirmar"
+            Clicked="Confirmar_Clicked"
+            HorizontalOptions="Center"/>
+    </StackLayout>
+
+</ContentPage>
