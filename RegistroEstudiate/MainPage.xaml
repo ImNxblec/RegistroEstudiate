@@ -1,60 +1,61 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="RegistroEstudiate.MainPage">
+<ContentPage
+    x:Class="RegistroEstudiate.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
     <StackLayout>
-        <Label 
-            Text="REGISTRO ESTUDIANTE" 
-            HorizontalOptions="Center" 
-            VerticalOptions="Center" 
-            FontSize="24" />
-        <Label 
-            Text="Nombre" 
-            HorizontalOptions="Start" 
-            VerticalOptions="Start" 
-            FontSize="18"/>
-            
-        <Entry 
-            x:Name="NombreEntry" 
-            Placeholder="Ingresa el nombre del estudiante" 
-            HorizontalOptions="Start" 
-            VerticalOptions="Start" 
+        <Label
+            FontSize="24"
+            HorizontalOptions="Center"
+            Text="REGISTRO ESTUDIANTE"
+            VerticalOptions="Center" />
+        <Label
             FontSize="18"
-            WidthRequest="350"
-            Text="{Binding Nombre}"/>
-        <Label 
-            Text="Apellido" 
-            HorizontalOptions="Start" 
-            VerticalOptions="Start" 
+            HorizontalOptions="Start"
+            Text="Nombre"
+            VerticalOptions="Start" />
+
+        <Entry
+            x:Name="NombreEntry"
             FontSize="18"
-            WidthRequest="350"/>
-        <Entry 
-            x:Name="ApellidoEntry" 
-            Placeholder="Ingresa el apellido del estudiante" 
-            HorizontalOptions="Start" 
-            VerticalOptions="Start" 
+            HorizontalOptions="Start"
+            Placeholder="Ingresa el nombre del estudiante"
+            Text="{Binding Nombre}"
+            VerticalOptions="Start"
+            WidthRequest="350" />
+        <Label
             FontSize="18"
-            WidthRequest="350"
-            Text="{Binding Apellido}"/>
-        <Label 
+            HorizontalOptions="Start"
+            Text="Apellido"
+            VerticalOptions="Start"
+            WidthRequest="350" />
+        <Entry
+            x:Name="ApellidoEntry"
+            FontSize="18"
+            HorizontalOptions="Start"
+            Placeholder="Ingresa el apellido del estudiante"
+            Text="{Binding Apellido}"
+            VerticalOptions="Start"
+            WidthRequest="350" />
+        <Label
+            FontSize="18"
+            HorizontalOptions="Start"
             Text="Materia"
-            HorizontalOptions="Start" 
-            VerticalOptions="Start" 
+            VerticalOptions="Start"
+            WidthRequest="350" />
+        <Entry
+            x:Name="MateriaEntry"
             FontSize="18"
-            WidthRequest="350"/>
-        <Entry 
-            x:Name="MateriaEntry" 
-            Placeholder="Ingresa la materia del estudiante" 
-            HorizontalOptions="Start" 
-            VerticalOptions="Start" 
-            FontSize="18"
-            WidthRequest="350"
-            Text="{Binding Materia}"/>
-        <Button 
-            Text="Confirmar"
+            HorizontalOptions="Start"
+            Placeholder="Ingresa la materia del estudiante"
+            Text="{Binding Materia}"
+            VerticalOptions="Start"
+            WidthRequest="350" />
+        <Button
             Clicked="Confirmar_Clicked"
-            HorizontalOptions="Center"/>
+            HorizontalOptions="Center"
+            Text="Confirmar" />
     </StackLayout>
 
 </ContentPage>
